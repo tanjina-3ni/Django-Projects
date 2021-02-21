@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            A simple webpage
-        </title>
-        <body>
-            <nav>
-                <a href="/">Home</a>|<a href="{% url 'about' %}">About</a>
-            </nav>
+{% extends 'base.html' %}
+{% block body %}
             <h1>My Webpage</h1>
             <div>
                 <p>
@@ -16,6 +8,4 @@
                    
                 </p>
             </div>
-        </body>
-    </head>
-</html>
+{% endblock %}

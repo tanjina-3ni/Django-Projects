@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            A simple webpage
-        </title>
-        <body>
-            <nav>
-                <a href="">Home</a>|<a href="{% url 'about' %}">About</a>
-            </nav>
-            <h1>My Webpage</h1>
+{% extends 'base.html' %}
+{% block body %}
+    <h1>My Webpage</h1>
             <div>
                 <p>
                     Name: {{ name }}
@@ -32,6 +24,5 @@
                     {% endfor %}
                 </p>
             </div>
-        </body>
-    </head>
-</html>
+
+{% endblock %}
