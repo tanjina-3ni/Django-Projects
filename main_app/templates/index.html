@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            A simple webpage
+        </title>
+        <body>
+            <nav>
+                <a href="">Home</a>|<a href="{% url 'about' %}">About</a>
+            </nav>
+            <h1>My Webpage</h1>
+            <div>
+                <p>
+                    Name: {{ name }}
+                </p>
+                <p>
+                    Name: {{ name|upper }}
+                </p>
+                <p>
+                    Name: {{ name|lower }}
+                </p>
+                <p>
+                    Country: {{ country }}
+                </p>
+                <p>
+                    {% for num in list %}
+                    {% if num <= 3 %}
+                    <h{{ num }}>Life is cool Bro</h{{ num }}>
+                    {% else %}
+                    <h{{ num }}>Life is Difficult</h{{ num }}>
+                    {% endif %}
+                    {% endfor %}
+                </p>
+            </div>
+        </body>
+    </head>
+</html>
