@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            A simple webpage
+        </title>
+        <body>
+            <nav>
+                <a href="/">Home</a>|<a href="{% url 'about' %}">About</a>
+            </nav>
+            
+
+            {%block body %}
+            
+            {% endblock %}
+
+        </body>
+    </head>
+</html>
